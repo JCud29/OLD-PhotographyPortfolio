@@ -62,18 +62,13 @@ nav {
   margin-top: 4.5em;
 }
 
-#hero {
-  width: 100%;
-  padding: 0px;
-}
-
 #hero img {
   object-fit: cover;
   min-height: 30em;
   filter: brightness(0.4);
 }
 
-.content {
+#hero .content {
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -88,4 +83,21 @@ h2 {
 
 span {
   padding-right: 0.3em;
+}
+
+.pageHeader {
+  width: 100%;
+  padding: 0px;
+}
+
+.coverimg {
+  width: 100%;
+  filter: brightness(0.4);
+}
+
+.CoverText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
