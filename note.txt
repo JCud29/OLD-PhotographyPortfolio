@@ -1,0 +1,10 @@
+@media screen and (min-width: 1800px) {
+  body {
+    max-width: 1900px;
+    margin: auto;
+  }
+  nav {
+    max-width: 1900px;
+    margin: auto;
+  }
+}

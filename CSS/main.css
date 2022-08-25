@@ -93,6 +93,8 @@ span {
 .coverimg {
   width: 100%;
   filter: brightness(0.4);
+  min-height: 12em;
+  object-fit: cover;
 }
 
 .CoverText {

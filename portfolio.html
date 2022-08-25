@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/grid.css" />
     <title>J70 Photography</title>
   </head>
   <body>
@@ -48,7 +49,7 @@
     <section class="container-fluid">
       <div class="row align-items-center">
         <div class="col pageHeader">
-          <img src="Assests/images/portfolio.jpg" alt="" class="coverimg" />
+          <img src="Assets/images/portfolio.jpg" alt="" class="coverimg" />
           <div class="CoverText">
             <h1 class="text-center">Portfolio</h1>
             <h4>
@@ -58,12 +59,80 @@
         </div>
       </div>
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <h2>About Me</h2>
+        <div class="col">
+          <div class="grid">
+            <div class="grid-col grid-col--1"></div>
+            <div class="grid-col grid-col--2"></div>
+            <div class="grid-col grid-col--3"></div>
+            <div class="grid-col grid-col--4"></div>
+
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-7.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-44.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-124.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-212.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-313.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-373.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-415.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-428.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-481.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-527.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-695.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-749.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-752.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-754.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-792.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-802.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-792.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="Assets/images/portfolioImg/DonGtCup-802.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+    <script>
+      // selector string as first argument
+      var colc = new Colcade(".grid", {
+        columns: ".grid-col",
+        items: ".grid-item",
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
