@@ -32,9 +32,6 @@ img {
   .grid-col {
     padding: 0 0.5em;
   }
-
-  img {
-  }
 }
 
 @media (min-width: 992px) {
@@ -43,7 +40,7 @@ img {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
   .grid-col--4 {
     display: block;
   }
