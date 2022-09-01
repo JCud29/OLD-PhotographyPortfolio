@@ -58,8 +58,28 @@ nav {
   font-size: 2.4rem;
 }
 
-.container-fluid {
-  margin-top: 4.5em;
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+#hero::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../Assets/images/DonGtCup-937-Edit.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.4);
+}
+#hero {
+  position: relative;
+  height: 100%;
 }
 
 #hero img {
@@ -110,6 +130,8 @@ span {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
 }
 
 .grid img {
@@ -126,4 +148,41 @@ span {
 .grid-col {
   flex: 1;
   padding: 0 0.1em;
+}
+
+.galleryCard img {
+  filter: brightness(0.9);
+  transition: all 0.8s ease-out;
+}
+
+.galleryCard:hover img {
+  filter: brightness(0.5);
+}
+
+.GalleryCardText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 0.6em 0.8em;
+  transition: all 0.8s ease-out;
+  font-size: 1.2em;
+}
+
+.galleryCard:hover .GalleryCardText {
+  color: rgb(49, 49, 49);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.galleryCard:hover .GalleryCardText span {
+  display: none;
+}
+
+.galleryCard:hover .GalleryCardText::before {
+  content: "View Images";
 }
