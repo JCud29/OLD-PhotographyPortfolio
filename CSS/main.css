@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
 
 body {
@@ -120,18 +121,26 @@ span {
 .coverimg {
   width: 100%;
   filter: brightness(0.4);
-  min-height: 12em;
+  min-height: 15em;
   object-fit: cover;
   margin-bottom: 0.8em;
 }
 
 .CoverText {
   position: absolute;
-  top: 50%;
+  top: 62%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center;
+}
+
+.CoverText h1 {
+  font-size: 1.8em;
+}
+
+.CoverText p {
+  font-size: 1.3em;
 }
 
 .grid img {
@@ -150,39 +159,104 @@ span {
   padding: 0 0.1em;
 }
 
+.galleryCard {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.galleryCard .galleryCardText {
+  position: absolute;
+  padding: 0.5em;
+  bottom: -80%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  .galleryCard .galleryCardText {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .galleryCard img {
-  filter: brightness(0.9);
-  transition: all 0.8s ease-out;
+  scale: 1.1;
+  transition: all 0.5s;
 }
 
 .galleryCard:hover img {
-  filter: brightness(0.5);
+  transform: translateY(-10px);
 }
 
-.GalleryCardText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  border: 3px solid #fff;
-  padding: 0.6em 0.8em;
-  transition: all 0.8s ease-out;
-  font-size: 1.2em;
-}
-
-.galleryCard:hover .GalleryCardText {
-  color: rgb(49, 49, 49);
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.galleryCard:hover .GalleryCardText span {
+.galleryCardText button {
   display: none;
+  border: solid 2px #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.3em 0.8em;
+  transition: all 0.5s;
+}
+.galleryCardText button:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 0.3em 0.8em;
 }
 
-.galleryCard:hover .GalleryCardText::before {
-  content: "View Images";
+.galleryCard:hover .galleryCardText {
+  bottom: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
+  padding-top: 25%;
+}
+
+.galleryCard:hover button {
+  display: block;
+  margin: auto;
+}
+
+.galleryCardText h1 {
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+@media screen and (max-width: 1300px) {
+  .galleryCardText h1 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .galleryCardText h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .galleryCardText h1 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 575.9px) {
+  .galleryCardText h1 {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 400px) {
+  .galleryCard .galleryCardText {
+    position: absolute;
+    bottom: -83%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 575.9px) {
+  .galleryCard .galleryCardText {
+    position: absolute;
+    bottom: -85%;
+  }
 }

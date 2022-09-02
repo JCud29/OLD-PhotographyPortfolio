@@ -11,6 +11,15 @@
 
 
 
+.galleryCard img {
+  filter: brightness(0.9);
+  transition: all 0.8s ease-out;
+}
+
+.galleryCard:hover img {
+  filter: brightness(0.5);
+}
+
 .GalleryCardText {
   position: absolute;
   top: 50%;
@@ -25,15 +34,17 @@
   transition: all 0.8s ease-out;
   font-size: 1.2em;
 }
-.GalleryCardText:hover {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.8);
+
+.galleryCard:hover .GalleryCardText {
+  color: rgb(49, 49, 49);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.GalleryCardText:hover span {
+.galleryCard:hover .GalleryCardText span {
   display: none;
 }
 
-.GalleryCardText:hover:before {
+.galleryCard:hover .GalleryCardText::before {
   content: "View Images";
 }
+
