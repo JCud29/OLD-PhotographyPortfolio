@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>J70 Photography</title>
+  </head>
+  <body>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-dark navbar-expand-md py-0 fixed-top"
+    >
+      <a href="index.html" class="navbar-brand pl-md-2">J70 Photography</a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="galleries.html" class="nav-link">Galleries</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col pageHeader">
+          <img src="Assets/images/portfolio.jpg" alt="" class="coverimg" />
+          <div class="CoverText">
+            <h1 class="text-center">Contact Me</h1>
+            <p>Please contact me about any enquires</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center justify-content-around">
+        <div class="col col-md-10 col-lg-7">
+          <form
+            id="contactForm"
+            class=""
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdShQYmDz_llfX92VM_AQYoburA59EPyCGCSLHC9TMtBaVQYg/formResponse"
+            method="post"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+          >
+            <div class="form-group">
+              <label for="Name">Full Name*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Name"
+                name="entry.1210179882"
+                placeholder="Full Name..."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="Email">Email Address*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="Email"
+                name="entry.842429413"
+                placeholder="Email..."
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="Phone">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Phone"
+                name="entry.1324708579"
+                placeholder="Phone Number..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="Message">Message*</label>
+              <textarea
+                class="form-control"
+                id="Message"
+                name="entry.530799893"
+                rows="5"
+                placeholder="Your Message..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group"><small>* Required</small></div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col pageHeader">
+          <img
+            src="Assets/images/portfolio.jpg"
+            alt=""
+            class="coverimg"
+            id="contactGalleryBanner"
+          />
+          <div class="CoverText">
+            <h2>Need any images or prints for personal or commercial use?</h2>
+            <p>
+              Images range across most aspects of motorsport include Touring
+              Cars, GTs, Endurance and many more
+            </p>
+            <button>View Galleries</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

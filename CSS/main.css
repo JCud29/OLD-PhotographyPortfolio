@@ -80,6 +80,7 @@ html {
 }
 #hero {
   position: relative;
+  margin-top: 0;
   height: 100%;
 }
 
@@ -93,6 +94,11 @@ html {
   position: absolute;
   bottom: 15px;
   left: 15px;
+}
+
+#hero h1,
+#hero h2 {
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -114,6 +120,7 @@ span {
 }
 
 .pageHeader {
+  margin-top: 4.5em;
   width: 100%;
   padding: 0px;
 }
@@ -128,7 +135,7 @@ span {
 
 .CoverText {
   position: absolute;
-  top: 62%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
@@ -139,8 +146,29 @@ span {
   font-size: 1.8em;
 }
 
+.GalleryHeaderText h1 {
+  font-size: 2.5em;
+}
+
 .CoverText p {
   font-size: 1.3em;
+}
+
+.CoverText button {
+  border: solid 2px #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 0.3em 0.8em;
+  transition: all 0.5s;
+}
+.CoverText button:hover {
+  background-color: #fff;
+  color: #000;
+  padding: 0.3em 0.8em;
+}
+
+#contactGalleryBanner {
+  filter: brightness(0.45);
 }
 
 .grid img {
@@ -176,6 +204,11 @@ span {
   text-decoration: none;
   color: white;
   transition: all 0.5s;
+}
+
+.galleryCardText a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
